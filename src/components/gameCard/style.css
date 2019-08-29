@@ -1,0 +1,12 @@
+.click-item{
+    border: 1px solid silver;
+    border-radius:3px;    
+    display: inline-block;
+    height:auto;margin:10px;
+    padding:5px;
+    width:175px;   
+}
+img {
+    max-height: 100%;
+    max-width: 100%;   
+}

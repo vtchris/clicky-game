@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"bob",
+        "image":"/images/minions/bob.jpg"
+    },
+    {
+        "id":2,
+        "name":"dave",
+        "image":"/images/minions/dave.jpg"
+    },
+    {
+        "id":3,
+        "name":"jon",
+        "image":"/images/minions/jon.jpg"
+    },
+    {
+        "id":4,
+        "name":"phil",
+        "image":"/images/minions/phil.jpg"
+    },
+    {
+        "id":5,
+        "name":"mark",
+        "image":"/images/minions/mark.jpg"
+    },
+    {
+        "id":6,
+        "name":"tim",
+        "image":"/images/minions/tim.jpg"
+    }
+]
