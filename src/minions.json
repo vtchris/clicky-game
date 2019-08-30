@@ -28,5 +28,15 @@
         "id":6,
         "name":"tim",
         "image":"/images/minions/tim.jpg"
+    },
+    {
+        "id":7,
+        "name":"stuart",
+        "image":"/images/minions/stuart.jpg"
+    },
+    {
+        "id":8,
+        "name":"kevin",
+        "image":"/images/minions/kevin.jpg"
     }
 ]
