@@ -38,5 +38,10 @@
         "id":8,
         "name":"kevin",
         "image":"/images/minions/kevin.jpg"
+    },
+    {
+        "id":9,
+        "name":"jerry",
+        "image":"/images/minions/jerry.jpg"
     }
 ]

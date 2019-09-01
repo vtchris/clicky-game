@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Card from "./components/gameCard"
+import Card from "./components/GameCard"
 import './App.css';
 import Minions from "./minions.json";
-import Header from "./components/header";
+import Header from "./components/Header";
 import { throwStatement } from '@babel/types';
+import GameBoard from "./components/GameBoard"
+import ResultPanel from "./components/ResultPanel"
 
 const shuffleArray = array => {
 
@@ -29,7 +31,8 @@ class App extends Component {
     wins: 0,
     losses: 0,
     highScore: 0,
-    Minions
+    Minions,
+    results: "rules"
   };
   handleDivClick = (id) => {
 
@@ -40,8 +43,10 @@ class App extends Component {
 
     if (clickArr.indexOf(id) > -1) {
      
-      this.setState({ clicks: [], clickCount: 0, losses: this.state.losses + 1 })
-      
+      this.setState({ clicks: [], clickCount: 0, losses: this.state.losses + 1,results: "loss" })
+
+
+
     } else {
 
       clickCount++
@@ -56,8 +61,12 @@ class App extends Component {
       }
 
       if(clickCount % Minions.length === 0){
-        this.setState({clicks:[], wins: this.state.wins + 1 })
+        this.setState({clicks:[], wins: this.state.wins + 1, results: "win" })
+      }else{
+        this.setState({results: "rules"})
       }
+
+      
 
     }
 
@@ -73,8 +82,10 @@ class App extends Component {
 
         <Header clicks={this.state.clickCount} highScore={this.state.highScore} wins={this.state.wins} losses={this.state.losses} />
 
-        {this.state.Minions.map(minion => <Card key={minion.id} name={minion.name} img={process.env.PUBLIC_URL + minion.image} handleDivClick={this.handleDivClick} id={minion.id} />)}
+        <GameBoard Minions={this.state.Minions} handleDivClick={this.handleDivClick} />
 
+        <ResultPanel display={this.state.results} />
+        
       </div>
 
 

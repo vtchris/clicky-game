@@ -1,0 +1,5 @@
+#gameBoard{
+    display: inline-block;
+    max-width:550px;
+    text-align: center;   
+}
