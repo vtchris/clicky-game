@@ -3,10 +3,11 @@ import "./roundOver.css";
 
 const RoundOver = (props) => (
 
-    <div id="results-div" className="jumbotron">
+    <div id="results-div" className="jumbotron text-center">
 
         <h1 class="display-4">{props.header}</h1>
-        <p><img src={props.src} alt="RoundOver" />{props.msg}</p>
+        <p className="lead">{props.msg}</p>
+        <img src={props.src} alt="RoundOver" />        
 
     </div>
 

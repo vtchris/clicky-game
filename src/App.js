@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Card from "./components/GameCard"
 import './App.css';
 import Minions from "./minions.json";
 import Header from "./components/Header";
@@ -66,16 +65,13 @@ class App extends Component {
         this.setState({results: "rules"})
       }
 
-      
-
     }
 
     this.setState({ Minions: shuffleArray(Minions) })
 
   };
   render() {
-    //shuffleArray(Minions)
-
+   
     return (
 
       <div>
